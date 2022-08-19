@@ -1,0 +1,9 @@
+name: cds-plugin
+version: 1.0-SNAPSHOT
+author: TendTo
+main: com.cds.Main
+commands:
+  ded:
+    description: You are ded. Surprise bit not! Ah ah
+    usage: /ded
+    permission-message: Dying is ghei
