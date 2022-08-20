@@ -1,7 +1,0 @@
-com/cds/command/CommandHandler.class
-com/cds/listener/WorldEventListener.class
-com/cds/command/ConsoleCommandHandler.class
-com/cds/handler/BaseHandler.class
-com/cds/Main.class
-com/cds/util/DroppedItem.class
-com/cds/command/GameCommandHandler.class
