@@ -15,7 +15,7 @@ class DroppedItem : BukkitRunnable() {
             val item = items.get(i)
             if (item.isOnGround()) {
                 item.getWorld().createExplosion(item.getLocation(), 0f)
-                items.remove(item)
+                items.removeAt(i)
             }
         }
     }

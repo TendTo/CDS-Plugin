@@ -1,9 +1,22 @@
 name: cds-plugin
 version: 1.0-SNAPSHOT
 author: TendTo
-main: com.cds.Main
+main: com.cds.CDSPlugin
+permissions:
+    cds-plugin.mucro:
+        description: Sei un mucro
+        default: false
+    cds-plugin.mucro.mucronis:
+        children:
+            cds-plugin.mucro: true
+        description: Sei un vero mucro
+        default: false
 commands:
   ded:
     description: You are ded. Surprise bit not! Ah ah
     usage: /ded
     permission-message: Dying is ghei
+  mucri:
+    description: Mucreggiare in compagnia
+    usage: /mucri [player]
+    permission-message: Non sei mucro, mi dispy :'(

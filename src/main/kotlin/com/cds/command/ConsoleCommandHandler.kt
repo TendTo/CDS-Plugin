@@ -1,11 +1,11 @@
 package com.cds.command
 
+import com.cds.CDSPlugin
 import com.cds.handler.BaseHandler
 import org.bukkit.command.Command
 import org.bukkit.command.ConsoleCommandSender
-import org.bukkit.plugin.java.JavaPlugin
 
-public class ConsoleCommandHandler(plugin: JavaPlugin) : BaseHandler(plugin) {
+public class ConsoleCommandHandler(plugin: CDSPlugin) : BaseHandler(plugin) {
 
     fun handleCommand(
             sender: ConsoleCommandSender,

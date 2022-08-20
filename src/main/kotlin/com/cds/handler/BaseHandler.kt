@@ -1,5 +1,5 @@
 package com.cds.handler
 
-import org.bukkit.plugin.java.JavaPlugin
+import com.cds.CDSPlugin
 
-abstract class BaseHandler(val plugin: JavaPlugin) {}
+abstract class BaseHandler(val plugin: CDSPlugin) {}
