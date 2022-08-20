@@ -7,9 +7,14 @@ import org.bukkit.Bukkit
 import org.bukkit.command.Command
 import org.bukkit.entity.Player
 
-class GameCommandHandler(plugin: CDSPlugin) : BaseHandler(plugin) {
+open class GameCommandHandler(plugin: CDSPlugin) : BaseHandler(plugin) {
 
-    fun handleCommand(sender: Player, cmd: Command, label: String, args: Array<String>): Boolean {
+    open fun handleCommand(
+            sender: Player,
+            cmd: Command,
+            label: String,
+            args: Array<String>
+    ): Boolean {
         // Case Insensitive Command
         val ciCmd = cmd.getName().lowercase()
         return when (ciCmd) {
@@ -19,12 +24,17 @@ class GameCommandHandler(plugin: CDSPlugin) : BaseHandler(plugin) {
         }
     }
 
-    fun handleDed(sender: Player): Boolean {
+    open fun handleDed(sender: Player): Boolean {
         sender.setHealth(0.0)
         return true
     }
 
-    fun handleMucri(sender: Player, cmd: Command, label: String, args: Array<String>): Boolean {
+    open fun handleMucri(
+            sender: Player,
+            cmd: Command,
+            label: String,
+            args: Array<String>
+    ): Boolean {
         if (!sender.hasPermission(PermissionKeys.MUCRO.key)) {
             sender.sendMessage("Non sei mucro, mi dispy :'(")
             return true

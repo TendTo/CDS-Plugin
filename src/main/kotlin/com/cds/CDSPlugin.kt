@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.scheduler.BukkitRunnable
 
-class CDSPlugin : JavaPlugin() {
+open class CDSPlugin : JavaPlugin() {
     val worldEventListener = WorldEventListener(this)
     val commandHandler = CommandHandler(this)
     val permissionManager = PermissionManager(this)

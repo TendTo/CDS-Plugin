@@ -34,6 +34,12 @@ It is called after the _.jar_ has been copied to the _plugins_ directory, and ri
 mvn install
 ```
 
+## 🧪 Test
+
+```sh
+mvn test
+```
+
 ## 📚 Reference
-[kotlin docs](https://kotlinlang.org/docs/home.html)
-[Bukkit wiki](https://bukkit.fandom.com/wiki/Plugin_Tutorial_(Eclipse))
+- [kotlin docs](https://kotlinlang.org/docs/home.html)
+- [Bukkit wiki](https://bukkit.fandom.com/wiki/Plugin_Tutorial_(Eclipse))
